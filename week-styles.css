@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Cursive";
+    src: url("fonts/Deutschlands.ttf");
+  }
+  @font-face {
+    font-family: "Ballet";
+    src: url("fonts/Ballet.ttf");
+  }
+  
+  h1 {
+    font-family: 'ballet';
+    font-weight: normal;
+    font-size: 4em;
+    
+  }
+  
+  body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 4rem;
+    padding: 8px;
+    border-style: dotted;
+    border-radius: 50px;
+    font-family: 'ballet';
+    text-align: center;
+    /* background-color: rgb(137, 207, 240) ; */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+ 
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .learning {
+    flex: 1;
+  }
+  
+  .interesting {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: small;
+   
+  }
+  
+  .interesting > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .interesting img,
+  .coding img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+  }
+  .doc img{
+    width: 500px;
+  }
+
+ .yayoi {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+ }
+  
+  
+  
+  .coding, .doc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  /* .coding a {
+    display: inline-block;
+    margin-right: 20px;
+  } */
+  
+  .coding img {
+    width: 500px;
+    height: auto;
+  }
+  
+  .code-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .code-links img:hover {
+    transform: scale(1.5);
+  }
+
+  .kyle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; 
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+
+  }
+
+  .kyle img {
+    width: 100px;
+    height: auto;
+  }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  }
+
+footer a:hover{
+  font-weight: bolder;
+}
+  
