@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan Duong</title>
+    <style>
+        @font-face {
+            font-family: "Relationship" ;
+            src: url("Relationship.ttf");
+        }
+        header { 
+            text-align: center;
+            padding: 0px 0 8px 0;
+            color: azure;
+            font-size: 25px;
+        }
+        body { 
+            font-family:'relationship';
+            background-image: url(restaurant-interior_1127-3394.avif);
+            background-size: cover;
+            padding-top: 10px;
+        }
+        .flex { 
+            display: flex;
+        }
+      
+        #weeks button {
+            display:none;
+            position: absolute;
+         top: 310px;     
+         right: 49%;     
+         background-color: rgb(255, 249, 241);
+         border: 2px groove black;
+         padding: 10px 15px;
+         border-radius: 12px;
+         z-index: 3;  
+         font-family: "Relationship";
+        }
+        
+        button:hover {
+            background-color: rgb(255, 85, 113);
+        }
+        #weeks button:hover {
+            background-color: rgb(255, 85, 113);
+        }
+
+        table {
+            font-size: 1em;   
+        }
+        td {
+            padding: 0 20px 0 20px; 
+        }
+        
+        .menu {
+            position:absolute;
+            font-size: 2em;
+             background-color: rgb(255, 249, 241);
+             border: 1px solid black; 
+             height: fit-content;
+            left: 20%;
+        }
+        .menu div {
+            padding: 10px 20px 30px 20px;
+        }
+
+ 
+
+   img {
+    display: block;
+    margin: 0 auto;   
+    width: 12%;
+}
+        
+        .speechBubble {
+         position: absolute;
+         top: 150px;     
+         right: 35%;     
+         background-color: rgb(255, 249, 241);
+         border: 2px solid black;
+         padding: 10px 15px;
+         border-radius: 12px;
+         font-size: 1em;
+         z-index: 2;        
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 10px;
+}
+
+button{
+    background-color: rgb(255, 249, 241);
+         border: 2px solid black;
+         padding: 10px 15px;
+         border-radius: 12px;
+}
+
+
+
+
+    
+    
+    </style>
+    <script>
+        // attributed to resources i was provided from my Media Computation class 
+        function myFunction() {
+            var input = document.getElementById("weekInput").value.trim().toLowerCase();
+           
+            if (input === "week one") {
+                document.getElementById("weekOneBtn").style.display = "inline-block";
+            } else if (input === "week two") {
+                document.getElementById("weekTwoBtn").style.display = "inline-block";
+            } else if (input === "week three") {
+                document.getElementById("weekThreeBtn").style.display = "inline-block";
+            } else {
+                alert("That is not on the menu! Try again");
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <header><h1>Meg's Interactive Media Restaurant</h1></header>
+    
+    <div class="flex">
+        <div class="menu">
+            <div>
+                <h2>Tonight's Specials</h2>
+            <table>
+                <tr><td>Week One</td> <td>$10</td></tr>     
+                <tr><td>Week Two</td> <td>$15</td></tr>  
+                <tr><td>Week Three</td> <td>$13</td></tr>        
+            </table>
+            </div>
+        </div>
+         
+            <img src="meg4.png" alt="serverMeg">
+        
+
+        <div class="speechBubble">
+            <h3>What would you like to order?</h3>
+        </div>
+    
+    </div>
+
+    <div id="weeks">
+        <a href="week_one.html"><button id="weekOneBtn">Week One</button></a>
+        <a href="week_two.html"><button id="weekTwoBtn">Week Two</button></a>
+        <a href="week_three.html"><button id="weekThreeBtn">Week Three</button></a>
+     </div>
+
+    <footer class="order">
+        <input type="text" id="weekInput" placeholder="I would like to order...">
+        <button onclick="myFunction()">Order</button>
+    </footer>
+    
+</body>
+</html>
