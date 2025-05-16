@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'worksans';
+  src: url(FONTS/WorkSans-Thin.ttf);
+}
+
+body {
+  font-family: worksans;
+  margin: 0;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  font-size: 4rem;
+  padding: 8px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div {
+  flex: 1;
+  text-align: center;
+}
+
+.one, .two, .three {
+  border: 1.5px solid;
+}
+
+.one { border-color: red; }
+.two { border-color: green; }
+.three { border-color: blue; }
+
+.one:hover { background-color: red; }
+.two:hover { background-color: green; }
+.three:hover { background-color: blue; }
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  scale: 1.5;
+}
+
+.intro {
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.workshops-section, .research-section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* .workshops {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+} */
+
+.workshop-pair {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.workshop-pair img {
+  width: 400px;
+  height: auto;
+}
+
+.workshop-pair h3 {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+/* .research {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+} */
+
+.images, .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.images img {
+  width: 400px;
+  height: auto;
+}
