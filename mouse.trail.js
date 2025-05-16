@@ -1,12 +1,14 @@
-//chat gpt assisted
 let messages = [];
 
 function setup() {
+  frameRate(10);
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
-  canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
-  canvas.style('pointer-events', 'none');
+  canvas.style('top', '0');
+  canvas.style('left', '0');
+  canvas.style('z-index', '9999'); 
+  canvas.style('pointer-events', 'none'); 
 
   textSize(14);
   textAlign(CENTER, CENTER);
@@ -14,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 20);
+  clear(); 
 
   if (mouseX >= 0 && mouseY >= 0 && mouseX <= width && mouseY <= height) {
     messages.push({ x: mouseX, y: mouseY, alpha: 64 });
@@ -22,10 +24,10 @@ function draw() {
 
   for (let i = messages.length - 1; i >= 0; i--) {
     let m = messages[i];
-    if (!m) continue; // Skip if null
+    if (!m) continue;
 
     fill(0, m.alpha);
-    text('#intmediarulez', m.x, m.y);
+    text('e⁻', m.x, m.y);
     m.alpha -= 1;
 
     if (m.alpha <= 0) {
@@ -33,3 +35,4 @@ function draw() {
     }
   }
 }
+

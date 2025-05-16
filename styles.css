@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'worksans';
+  src: url(FONTS/WorkSans-Thin.ttf);
+}
+
+body {
+  font-family: worksans;
+}
+header {
+  font-size: 1em;
+ 
+  text-align: center;
+}
+main {
+  padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+  }
+ 
+
+div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: background-color 0.3s ease; */
+  }
+ 
+  .one {border: 2px solid red;}
+  .two {border: 2px solid green;}
+  .three {border: 2px solid blue;}
+  .process {border: 2px solid orange;}
+  .past-workbooks {border: 2px solid black;}
+
+  .one, .two, .three {
+    transition: background-color 0.3s ease;
+  }
+
+  .one:hover { background-color: red;}
+  .two:hover { background-color: green;}
+  .three:hover { background-color: blue;}
+  .process:hover { background-color: orange;}
+  .past-workbooks:hover {background-color: black;}
+
+  .one.hovering { background-color: red; }
+  .two.hovering { background-color: green; }
+  .three.hovering { background-color: blue; }
+  
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    scale: 1.5;
+  }
+
+  .process {
+    height: 3em;
+  }
+
+  .past-workbooks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 1rem;
+  }
+  
+  .past-workbooks a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .iframe-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
